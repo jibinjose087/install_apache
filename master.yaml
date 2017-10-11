@@ -1,2 +1,2 @@
 ---
-- include: /home/u55437/ansible-playbooks/dev-install/playbooks/webservers.yaml
+- include: playbooks/webservers.yaml
