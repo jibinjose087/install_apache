@@ -1,0 +1,10 @@
+---
+- name: Install apache on Debian
+  apt: name=apache2 state=installed
+  when: ansible_os_family == 'Debian'
+  notify: Restart apache2
+
+- name: Install apache in Redhat
+  yum: name=httpd state=installed
+  when: ansible_os_family == 'RedHat'
+  notify: Restart httpd
