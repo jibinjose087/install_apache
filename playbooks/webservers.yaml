@@ -1,5 +1,5 @@
 ---
-- hosts: dev
+- hosts: '{{hosts}}'
   become: true
   roles:
   - webserver
