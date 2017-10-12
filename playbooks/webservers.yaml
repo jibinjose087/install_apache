@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: {{ENV}}
   become: true
   roles:
   - webserver
